@@ -1,0 +1,43 @@
+{
+    "Ve" : [
+        {
+            "idVe": 1001,
+            "chuyenBay": "VN123",
+            "ngayBay": "2024-01-30",
+            "gia": 500000,
+            "idLoaiVe": 1
+        },
+        {
+            "idVe": 1002,
+            "chuyenBay": "VN456",
+            "ngayBay": "2024-02-15",
+            "gia": 800000,
+            "idLoaiVe": 2
+        },
+        {
+            "idVe": 1003,
+            "chuyenBay": "VN789",
+            "ngayBay": "2024-03-20",
+            "gia": 1200000,
+            "idLoaiVe": 3
+        }
+    ],
+
+    "danhMucVe" : [
+        {
+            "id": 1,
+            "loaiVe": "Phổ thông",
+            "moTa": "Vé phổ thông, không bao gồm hành lý ký gửi."
+        },
+        {
+            "id": 2,
+            "loaiVe": "Phổ thông đặc biệt",
+            "moTa": "Vé phổ thông đặc biệt, bao gồm hành lý ký gửi và ưu tiên lên máy bay."
+        },
+        {
+            "id": 3,
+            "loaiVe": "Thương gia",
+            "moTa": "Vé thương gia, bao gồm tiện ích cao cấp và ưu tiên lên máy bay."
+        }
+    ]
+}
