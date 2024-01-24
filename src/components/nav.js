@@ -11,16 +11,16 @@ const navigation = () => {
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
                 <li class="nav-item ms-5 fw-bold">
-                    <a class="nav-link active " href="/">Trang Chủ</a>
+                    <a class="nav-link active " href="/" id="navLink">Trang Chủ</a>
                 </li>
                 <li class="nav-item ms-5 fw-bold">
-                    <a class="nav-link" href="/contact">Liên Hệ </a>
+                    <a class="nav-link" href="/contact" id="navLink">Giới Thiệu </a>
                 </li>
                 <li class="nav-item ms-5 fw-bold">
-                    <a class="nav-link" href="/order">Đặt Vé </a>
+                    <a class="nav-link" href="/order" id="navLink">Đặt Vé </a>
                 </li>
                 <li class="nav-item ms-5 fw-bold">
-                    <a class="nav-link " href="/order"> <button class="btn btn-primary">Đặt Vé</button> </a>
+                    <a  href="/order" id="navLink"> <button class="btn btn-primary">Đặt Vé</button> </a>
                 </li>
                     
             </ul>

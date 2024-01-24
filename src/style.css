@@ -1,29 +1,39 @@
 #header {
-    background:#edf5f7;
+    /* background:#edf5f7; */
+    background-image: linear-gradient(#5cd9f8, #d3eef5 , #ffff);
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
     height: 120vh;
 }
 #menu button{
     background: #1F5A8B;
     border: none;
     animation: btnOrder 2s linear infinite alternate ;
+    
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+#navLink:hover {
+    border-bottom: 2px solid #1F5A8B;
+    color: #1F5A8B;
 }
 a{
-    cursor:  pointer !important;
+    cursor:  pointer;
 }
 #title {
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
-    margin-bottom: 10%;
 }
 #customBgBanner{
     background: url(../public/e-AnGx1n-gtw8-unsplash.jpg) 60% 20% no-repeat;
-    height: 300px;
+    height: 310px;
     position: relative;
+    margin-top: 400px;
 }
 #customImgBanner {
-    width: 87%;
+    width: 85%;
     position: absolute;
-    top: -10%;
+    top: 30%;
 }
 #Header {
     background: url(../public/kevin-woblick-UdUbSPwbv2c-unsplash.jpg) 100% 10% no-repeat;
@@ -181,4 +191,71 @@ a{
 }
 #orderText p{
     text-shadow: 1px 1px 1px rgba(22, 22, 22, 0.568);
+}
+
+/* -------------------Footer--------------------------- */
+footer {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    padding: 50px 5%;
+    /* background-color: #889fec; */
+    background-image: linear-gradient(#ffff, #d3eef5, #5cd9f8  );
+    color: #000;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+.service-item h4{
+    margin-bottom: 40px;
+}
+.contact p {
+    width: 80%;
+    margin: 10px 0;
+
+}
+.contact p ,
+    .contact .contact-logo{
+        margin-left: 50px;
+    }
+.contact .fa-facebook-f {
+    padding: 10px 13px;
+}
+
+.contact .fa-youtube {
+    padding: 10px 9px;
+}
+
+.contact-logo i {
+    width: 37px;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 2%;
+}
+
+.service {
+    width: 35%;
+}
+
+.service-item {
+    margin-top: 40px;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 10%;
+    line-height: 2.8;
+}
+/* --------------------contact------------------------------ */
+#contact-img {
+    height: 400px;
+    background: url(../public/il_794xN.2325991100_4saf.jpg) 100% 50%  no-repeat;
+    background-size: cover;
+    
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+#service{
+    background: linear-gradient(to top right , #c4e1ee , #1a88e2);
+    border: none;
+    box-shadow: 4px 4px 4px rgba(19, 19, 19, 0.699);
 }

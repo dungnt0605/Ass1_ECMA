@@ -1,11 +1,13 @@
 import navigation from "./nav";
+import {dataArrayVe, dataArrayDanhMucVe } from "../../conn.js";
+
 
 const HeaderOrrderComponent = () => {
     return `
     <header id="Header">
-        ${navigation()}
+    ${navigation()}
         <div class="container  d-flex justify-content-between">
-            <div class="w-50 me-5" id="orderText">
+            <div class="w-50 me-5 mt-5" id="orderText">
                 <h1 >" Đặt Vé Ngay - Khám Phá Hành Trình Mới! "</h1>
                 <p class="w-75 text-white ">Hãy là một phần của chuyến phiêu lưu này! Đặt vé của bạn ngay bây giờ và chúng ta cùng nhau khám phá 
                     những trải nghiệm độc đáo, hấp dẫn. Đừng bỏ lỡ cơ hội tận hưởng những khoảnh khắc đáng nhớ và giao 
@@ -32,9 +34,18 @@ const HeaderOrrderComponent = () => {
                                 <h4>Nữ</h4>
                                 <input type="radio" class="gender mx-2" name="gender" value="0">
                             </div>
+                            
+                            <h4>Chọn chuyến bay :</h4>
+                            <select name="flight" id="flight">
+                            ${dataArrayVe.map((e) => {
+                                return`
+                                <option value="${e.idVe}">${e.chuyenBay}</option>`;
+                            })}
+                            </select>
 
                             <h4>SĐT :</h4>
                             <input type="text" id="sdt" >
+
                         </div>
                         
                     </div>
@@ -50,16 +61,20 @@ const HeaderOrrderComponent = () => {
                             <input type="date" id="date_order" >
 
                             <h4>Hạng vé :</h4>
-                            <select name="" id="hangVe">
-                                <option value=""></option>
+                            <select name="hangVe" id="hangVe">
+                            ${dataArrayDanhMucVe.map((e) => {
+                                return`
+                                <option value="${e.id}">${e.loaiVe}</option>`;
+                            })}
                             </select>
 
                             <h4>Hành lý :</h4>
                             <input type="text" id="box" >
 
                             <h4>Hình thức thanh toán :</h4>
-                            <select name="" id="pay">
-                                <option value=""></option>
+                            <select name="pay" id="pay">
+                                <option value="on">Thanh toán Online</option>
+                                <option value="off">Thanh toán tiền mặt</option>
                             </select>
                         </div>
                         

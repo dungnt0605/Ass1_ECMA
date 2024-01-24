@@ -4,21 +4,30 @@
             "idVe": 1001,
             "chuyenBay": "VN123",
             "ngayBay": "2024-01-30",
-            "gia": 500000,
+            "noidi" : "Hà Nội",
+            "noiden" : "Cầu Vàng Đà Nẵng",
+            "image" : "cau_ba_vang.jpg",
+            "gia": 20000,
             "idLoaiVe": 1
         },
         {
             "idVe": 1002,
             "chuyenBay": "VN456",
             "ngayBay": "2024-02-15",
-            "gia": 800000,
+            "noidi" : "Hà Nội",
+            "noiden" : "Đà Lạt",
+            "image" : "da_lat.jpg",
+            "gia": 12000,
             "idLoaiVe": 2
         },
         {
             "idVe": 1003,
             "chuyenBay": "VN789",
             "ngayBay": "2024-03-20",
-            "gia": 1200000,
+            "noidi" : "Hà Nội",
+            "noiden" : "Phú Quốc",
+            "image" : "phu_quoc.jpg",
+            "gia": 150000,
             "idLoaiVe": 3
         }
     ],
@@ -40,4 +49,5 @@
             "moTa": "Vé thương gia, bao gồm tiện ích cao cấp và ưu tiên lên máy bay."
         }
     ]
+    
 }
