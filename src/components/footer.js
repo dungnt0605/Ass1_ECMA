@@ -1,5 +1,5 @@
 const FooterComponent =  () => {
-    return `
+    return /*html*/`
     <div class="bg-dark">
     <footer >
     <section class="contact">

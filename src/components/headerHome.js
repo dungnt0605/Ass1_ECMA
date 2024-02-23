@@ -1,7 +1,7 @@
 import navigation from "./nav";
 
 const HeaderHomeComponent = () => {
-  return `
+  return /*html*/`
   <header id="header">
   ${navigation()}
     <div class="container" id="banner">

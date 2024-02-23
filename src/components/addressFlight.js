@@ -1,16 +1,24 @@
-import { dataArrayVe } from "../../conn.js";
+import { useEffect, useState } from "../libs/index.js";
 
 const AddressComponent = () => {
-    
-    return `
+
+    const [post , setPost] = useState([]);
+
+    useEffect (() => {
+        fetch("http://localhost:3000/sale")
+        .then((response) => response.json())
+        .then((data) => setPost(data));
+        
+    },[]);
+    return /*html*/`
     <div class="container my-5 " id="explore">
     <h3 class="mb-5">Khám phá</h3>
     <div class="row">
-        <div class="col-lg-2">
+        <div class="col-lg-3">
             <img src="../public/Khám phá.png" alt="" class=" mt-5" style="width: 30%;">
 
         </div>
-    ${dataArrayVe.map((e) => {
+    ${post.map((e) => {
         return `
         <div class="col-lg-3">
             <div class="card rounded-5 me-0" style="width: 18rem; overflow: hidden;">
@@ -26,7 +34,7 @@ const AddressComponent = () => {
                 </div>
             </div>
         </div>`;
-        })}
+        }).join('')}
         </div> 
     </div> 
     ` ;

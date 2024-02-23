@@ -1,5 +1,5 @@
 const navigation = () => {
-    return `
+    return /*html*/`
     <nav class="navbar navbar-expand-lg " id="menu">
     <div class="container  " id="nav">
         <a class="navbar-brand fw-bold fs-2" href="/"><img src="../public/FOR NATURE (1) 1.png" alt="" class="w-50"></a>
@@ -16,8 +16,16 @@ const navigation = () => {
                 <li class="nav-item ms-5 fw-bold">
                     <a class="nav-link" href="/contact" id="navLink">Giới Thiệu </a>
                 </li>
-                <li class="nav-item ms-5 fw-bold">
-                    <a class="nav-link" href="/order" id="navLink">Đặt Vé </a>
+               
+                <li class="nav-item dropdown ms-5 fw-bold">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/admin/flight">Chuyến Bay</a></li>
+                        <li><a class="dropdown-item" href="/admin/product">Danh Mục chuyến bay</a></li>
+                        <li><a class="dropdown-item" href="/admin/booking">Đặt vé</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item ms-5 fw-bold">
                     <a  href="/order" id="navLink"> <button class="btn btn-primary">Đặt Vé</button> </a>

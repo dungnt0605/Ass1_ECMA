@@ -1,53 +1,96 @@
 {
-    "Ve" : [
-        {
-            "idVe": 1001,
-            "chuyenBay": "VN123",
-            "ngayBay": "2024-01-30",
-            "noidi" : "Hà Nội",
-            "noiden" : "Cầu Vàng Đà Nẵng",
-            "image" : "cau_ba_vang.jpg",
-            "gia": 20000,
-            "idLoaiVe": 1
-        },
-        {
-            "idVe": 1002,
-            "chuyenBay": "VN456",
-            "ngayBay": "2024-02-15",
-            "noidi" : "Hà Nội",
-            "noiden" : "Đà Lạt",
-            "image" : "da_lat.jpg",
-            "gia": 12000,
-            "idLoaiVe": 2
-        },
-        {
-            "idVe": 1003,
-            "chuyenBay": "VN789",
-            "ngayBay": "2024-03-20",
-            "noidi" : "Hà Nội",
-            "noiden" : "Phú Quốc",
-            "image" : "phu_quoc.jpg",
-            "gia": 150000,
-            "idLoaiVe": 3
-        }
-    ],
-
-    "danhMucVe" : [
-        {
-            "id": 1,
-            "loaiVe": "Phổ thông",
-            "moTa": "Vé phổ thông, không bao gồm hành lý ký gửi."
-        },
-        {
-            "id": 2,
-            "loaiVe": "Phổ thông đặc biệt",
-            "moTa": "Vé phổ thông đặc biệt, bao gồm hành lý ký gửi và ưu tiên lên máy bay."
-        },
-        {
-            "id": 3,
-            "loaiVe": "Thương gia",
-            "moTa": "Vé thương gia, bao gồm tiện ích cao cấp và ưu tiên lên máy bay."
-        }
-    ]
-    
+  "user": [],
+  "sale": [
+    {
+      "chuyenBay": "VN123",
+      "noidi": "Hà Nội",
+      "noiden": "Cầu Vàng Đà Nẵng",
+      "image": "cau_ba_vang.jpg",
+      "gia": 20000,
+      "id": 1
+    },
+    {
+      "chuyenBay": "VN456",
+      "noidi": "Hà Nội",
+      "noiden": "Đà Lạt",
+      "image": "da_lat.jpg",
+      "gia": 12000,
+      "id": 2
+    },
+    {
+      "chuyenBay": "VN789",
+      "noidi": "Hà Nội",
+      "noiden": "Phú Quốc",
+      "image": "phu_quoc.jpg",
+      "gia": 150000,
+      "id": 3
+    }
+  ],
+  "Ve": [
+    {
+      "chuyenBay": "VN5623",
+      "noidi": "Hà Nội",
+      "noiden": "Hưng Yên",
+      "time": "12:00",
+      "gia": "24000",
+      "id": "0535"
+    },
+    {
+      "id": "f9d7",
+      "chuyenBay": "VN5623",
+      "noidi": "Hà Nội",
+      "noiden": "Thanh Hóa",
+      "time": "21:59",
+      "gia": "24000"
+    }
+  ],
+  "datVe": [
+    {
+      "name": "Ngô Dung ",
+      "idGuest": "1234567",
+      "email": "sdvndung051230@gmail.com",
+      "sdt": "0346246678",
+      "flight": "c7d3",
+      "from_order": "Hà Nội ",
+      "to_order": "Đà Nẵng",
+      "date_order": "2024-02-18",
+      "hangVe": "b20c",
+      "box": "fc45",
+      "pay": "on",
+      "role": "0",
+      "id": "fc45"
+    },
+    {
+      "name": "lanxinhdep",
+      "idGuest": "1234567",
+      "email": "dungntph31678@fpt.vn",
+      "sdt": "0346246345",
+      "flight": "0535",
+      "from_order": "Hà Nội ",
+      "to_order": "Đà Nẵng",
+      "date_order": "2024-02-10",
+      "hangVe": "ddbf",
+      "box": "b999",
+      "pay": "on",
+      "role": "1",
+      "id": "b999"
+    }
+  ],
+  "danhMucVe": [
+    {
+      "id": "ddbf",
+      "loaiVe": "Phổ thông",
+      "moTa": "Vé phổ thông, không bao gồm hành lý ký gửi."
+    },
+    {
+      "id": "b20c",
+      "loaiVe": "Phổ thông đặc biệt",
+      "moTa": "Vé phổ thông đặc biệt, bao gồm hành lý ký gửi và ưu tiên lên máy bay."
+    },
+    {
+      "loaiVe": "Hạng Thương Gia",
+      "moTa": "Vé thương gia, bao gồm tiện ích cao cấp và ưu tiên lên máy bay.",
+      "id": "06bc"
+    }
+  ]
 }
